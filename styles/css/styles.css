@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #FFFFFF;
+  background-color: #212529;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #212529;
+}
+
+.full-view {
+  height: 100vh;
+}
+
+.primary-text-color {
+  color: #2692eb;
+}
+
+svg {
+  width: 3rem;
+}
+
+.button-primary {
+  color: white;
+  background-color: #2692eb;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  border-style: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.button-primary:hover {
+  background-color: #1e75bc;
+}
+
+.relative-el {
+  position: relative;
+}
+
+::selection {
+  color: #FFFFFF;
+  background-color: #138be4;
+}
+
+.profile-pic {
+  max-width: 25rem;
+  border-radius: 50%;
+}
+
+.whoami {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-heading {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.intro-description {
+  max-width: 500px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.social-media div {
+  padding: 0.5rem 1.5rem;
+}
+
+.call-to-action {
+  margin: 0.5rem 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

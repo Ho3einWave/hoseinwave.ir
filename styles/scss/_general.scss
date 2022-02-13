@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: $white;
+    background-color: $primaryBg;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $primaryBg;
+}
+
+.full-view {
+    height: 100vh;
+}
+
+.primary-text-color {
+    color: $primary;
+}
+
+svg {
+    width: 3rem;
+}
+
+.button-primary {
+    color: white;
+    background-color: $primary;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: $primarytint1;
+    }
+}
+
+.relative-el {
+    position: relative;
+}
+
+::selection {
+    color: $white;
+    background-color: $selectionColor;
+}
