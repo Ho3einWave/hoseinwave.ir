@@ -49,3 +49,51 @@ svg {
     color: $white;
     background-color: $selectionColor;
 }
+
+.grid {
+    display: grid;
+}
+
+.grid-2-c {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-c {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content-block {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-block {
+    display: inline-block;
+    position: relative;
+    h2 {
+        position: relative;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        background: #1971C2;
+        height: 0.875rem;
+        width: 120%;
+        top: 0.775rem;
+        left: -10%;
+    }
+}
+
+.margin-2-top {
+    margin-top: 2rem;
+}
+
+.margin-4-top {
+    margin-top: 4rem;
+}
+
+.margin-2-bottom {
+    margin-top: 2rem;
+}

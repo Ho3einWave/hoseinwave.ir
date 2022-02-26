@@ -50,8 +50,56 @@ svg {
   background-color: #138be4;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-2-c {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-c {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content-block {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-block {
+  display: inline-block;
+  position: relative;
+}
+.title-block h2 {
+  position: relative;
+}
+.title-block::before {
+  position: absolute;
+  content: "";
+  background: #1971C2;
+  height: 0.875rem;
+  width: 120%;
+  top: 0.775rem;
+  left: -10%;
+}
+
+.margin-2-top {
+  margin-top: 2rem;
+}
+
+.margin-4-top {
+  margin-top: 4rem;
+}
+
+.margin-2-bottom {
+  margin-top: 2rem;
+}
+
 .profile-pic {
-  max-width: 25rem;
+  max-width: 20rem;
   border-radius: 50%;
 }
 
@@ -87,6 +135,72 @@ svg {
 
 .call-to-action {
   margin: 0.5rem 0;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+.image img {
+  max-width: 25rem;
+}
+
+.text {
+  margin: 4rem 0;
+}
+.text h1:nth-child(2) {
+  color: #2692eb;
+}
+.text p {
+  max-width: 500px;
+  line-height: 1.5;
+}
+.text h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.icon {
+  background-color: #343A40;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skill h3 {
+  margin: 1rem 0;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details svg {
+  width: 2rem;
+}
+
+.project {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-image img {
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
 .profile-pic {
-    max-width: 25rem;
+    max-width: 20rem;
     border-radius: 50%;
 }
 
@@ -35,4 +35,72 @@
 
 .call-to-action {
     margin: 0.5rem 0;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    img {
+        max-width: 25rem;
+    }
+}
+
+.text {
+    margin: 4rem 0;
+    h1:nth-child(2) {
+        color: $primary;
+    }
+    p {
+        max-width: 500px;
+        line-height: 1.5;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 200;
+    }
+}
+
+.icon {
+    background-color: #343A40;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+        margin: 1rem 0;
+    }
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+        width: 2rem;
+    }
+}
+
+.project {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-image {
+    img {
+        max-width: 100%;
+        border-radius: 1rem;
+    }
 }
