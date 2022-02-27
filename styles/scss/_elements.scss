@@ -61,7 +61,7 @@
 }
 
 .icon {
-    background-color: #343A40;
+    background-color: $graybg;
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
@@ -102,5 +102,50 @@
     img {
         max-width: 100%;
         border-radius: 1rem;
+    }
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h4 {
+        margin: 0 0.5rem;
+    }
+    svg {
+        width: 1.5rem;
+    }
+}
+
+.contact-component {
+    max-width: 600px;
+    max-height: 400px;
+    margin: 2rem auto;
+    background: $graybg;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.contact {
+    input {
+        margin: 0.5rem 0;
+    }
+    input.textbox {
+        height: 6rem;
+    }
+    button {
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+.illu {
+    position: relative;
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 250px;
     }
 }

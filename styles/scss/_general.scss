@@ -10,6 +10,14 @@ body {
     background-color: $primaryBg;
 }
 
+input {
+    background: $inputbg;
+    border-style: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: $white;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -78,7 +86,7 @@ svg {
     &::before {
         position: absolute;
         content: "";
-        background: #1971C2;
+        background: $titleline;
         height: 0.875rem;
         width: 120%;
         top: 0.775rem;
@@ -96,4 +104,8 @@ svg {
 
 .margin-2-bottom {
     margin-top: 2rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }

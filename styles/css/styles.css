@@ -10,6 +10,14 @@ body {
   background-color: #212529;
 }
 
+input {
+  background: #272C30;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #FFFFFF;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -96,6 +104,10 @@ svg {
 
 .margin-2-bottom {
   margin-top: 2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .profile-pic {
@@ -201,6 +213,49 @@ svg {
 .project-image img {
   max-width: 100%;
   border-radius: 1rem;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.likes h4 {
+  margin: 0 0.5rem;
+}
+.likes svg {
+  width: 1.5rem;
+}
+
+.contact-component {
+  max-width: 600px;
+  max-height: 400px;
+  margin: 2rem auto;
+  background: #343A40;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.contact input {
+  margin: 0.5rem 0;
+}
+.contact input.textbox {
+  height: 6rem;
+}
+.contact button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.illu {
+  position: relative;
+}
+.illu img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 250px;
 }
 
 /*# sourceMappingURL=styles.css.map */
