@@ -89,6 +89,8 @@
         width: 2rem;
     }
     a {
+        margin-top: 1rem;
+        display: inline-block;
         color: $white;
         text-decoration: none;
         svg {
@@ -174,5 +176,21 @@
         &:hover {
             fill: $white;
         }
+    }
+}
+
+.invalid-input {
+    animation: invalid 5s ease 0.5s;
+}
+
+@keyframes invalid {
+    0% {
+        border: 0.1rem solid rgb(204, 40, 40);
+    }
+    99% {
+        border: 0.1rem solid rgba(204, 40, 40, 0);
+    }
+    100% {
+        border: none;
     }
 }

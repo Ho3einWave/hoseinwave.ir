@@ -45,7 +45,7 @@
 
                 </div>
             </div>
-            <button class="call-to-action button-primary"><h2>Let's Talk</h2></button>
+            <button id="calltoaction" class="call-to-action button-primary"><h2>Let's Talk</h2></button>
         </div>
     </section>
     <section class="container about-me margin-2-top">
@@ -150,13 +150,13 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg></h4>
                     </a>
-                    <div class="likes">
+                    <!-- <div class="likes" x-id="0">
                         <h4 class="count">0</h4>
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.5833 6.25C8.83124 6.25 4.16666 10.8667 4.16666 16.5625C4.16666 21.1604 5.98957 32.0729 23.9333 43.1042C24.2547 43.2997 24.6237 43.4032 25 43.4032C25.3762 43.4032 25.7452 43.2997 26.0667 43.1042C44.0104 32.0729 45.8333 21.1604 45.8333 16.5625C45.8333 10.8667 41.1687 6.25 35.4167 6.25C29.6646 6.25 25 12.5 25 12.5C25 12.5 20.3354 6.25 14.5833 6.25Z" stroke="#F03E3E" stroke-width="5.83333" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="project">
@@ -168,13 +168,13 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg></h4>
                     </a>
-                    <div class="likes">
+                    <!-- <div class="likes" x-id="1">
                         <h4 class="count">0</h4>
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.5833 6.25C8.83124 6.25 4.16666 10.8667 4.16666 16.5625C4.16666 21.1604 5.98957 32.0729 23.9333 43.1042C24.2547 43.2997 24.6237 43.4032 25 43.4032C25.3762 43.4032 25.7452 43.2997 26.0667 43.1042C44.0104 32.0729 45.8333 21.1604 45.8333 16.5625C45.8333 10.8667 41.1687 6.25 35.4167 6.25C29.6646 6.25 25 12.5 25 12.5C25 12.5 20.3354 6.25 14.5833 6.25Z" stroke="#F03E3E" stroke-width="5.83333" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -187,19 +187,22 @@
                 <h2>Contact</h2>
             </div>
         </div>
-        <div class="contact-component grid grid-2-c margin-4-top">
+        <div class="contact-component grid grid-2-c margin-4-top" id="contact">
             <div class="contact">
                 <h3 class="uppercase">Contact with me</h3>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea name="" id="text" cols="25" rows="8" placeholder="Say Somthing"></textarea>
-                <button class="button-primary">Send</button>
+                <input type="text" placeholder="Name" id="name">
+                <input type="email" placeholder="Email" id="email">
+                <textarea id="text" cols="25" rows="8" placeholder="Say Somthing"></textarea>
+                <button class="button-primary" id="send">Send</button>
             </div>
             <div class="illu">
                 <img src="imgs/contact.svg" alt="">
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

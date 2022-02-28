@@ -17,6 +17,7 @@ textarea {
   border-radius: 1rem;
   padding: 0.5rem;
   color: #FFFFFF;
+  outline-style: none;
 }
 
 .container {
@@ -203,6 +204,8 @@ svg {
   width: 2rem;
 }
 .details a {
+  margin-top: 1rem;
+  display: inline-block;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -286,6 +289,22 @@ svg {
 }
 .tech svg:hover {
   fill: #FFFFFF;
+}
+
+.invalid-input {
+  animation: invalid 5s ease 0.5s;
+}
+
+@keyframes invalid {
+  0% {
+    border: 0.1rem solid #cc2828;
+  }
+  99% {
+    border: 0.1rem solid rgba(204, 40, 40, 0);
+  }
+  100% {
+    border: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
