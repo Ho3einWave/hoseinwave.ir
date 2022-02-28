@@ -10,7 +10,8 @@ body {
   background-color: #212529;
 }
 
-input {
+input,
+textarea {
   background: #272C30;
   border-style: none;
   border-radius: 1rem;
@@ -201,6 +202,13 @@ svg {
 .details svg {
   width: 2rem;
 }
+.details a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.details a svg {
+  width: 1rem;
+}
 
 .project {
   padding: 5rem;
@@ -210,8 +218,11 @@ svg {
   flex-direction: column;
 }
 
-.project-image img {
-  max-width: 100%;
+.project-image {
+  height: 230px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
   border-radius: 1rem;
 }
 
@@ -226,6 +237,9 @@ svg {
 .likes svg {
   width: 1.5rem;
 }
+.likes svg:hover {
+  cursor: pointer;
+}
 
 .contact-component {
   max-width: 600px;
@@ -239,8 +253,10 @@ svg {
 .contact input {
   margin: 0.5rem 0;
 }
-.contact input.textbox {
+.contact textarea {
+  margin: 0.5rem 0;
   height: 6rem;
+  resize: none;
 }
 .contact button {
   margin-top: 1rem;
@@ -256,6 +272,20 @@ svg {
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: 250px;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.tech svg {
+  fill: #2692eb;
+  transition: fill 0.5s ease;
+}
+.tech svg:hover {
+  fill: #FFFFFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

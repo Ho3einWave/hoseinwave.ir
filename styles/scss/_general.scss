@@ -10,7 +10,8 @@ body {
     background-color: $primaryBg;
 }
 
-input {
+input,
+textarea {
     background: $inputbg;
     border-style: none;
     border-radius: 1rem;
