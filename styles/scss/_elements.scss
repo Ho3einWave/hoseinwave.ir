@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: $primaryBg;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 10px;
+}
+
 .profile-pic {
     max-width: 20rem;
     border-radius: 50%;
@@ -30,6 +43,13 @@
     flex-direction: row;
     div {
         padding: 0.5rem 1.5rem;
+        svg {
+            fill: $primary;
+            transition: fill 0.5s ease;
+        }
+        svg:hover {
+            fill: $white;
+        }
     }
 }
 

@@ -12,7 +12,19 @@ ctaButton.addEventListener('click', (click) => {
 sendContact.addEventListener('click', click => {
     debugger
     if (validator.isEmail(document.querySelector('#email').value) && document.querySelector('#text').value !== "" && document.querySelector('#name').value !== "") {
-        console.log(true)
+        let name = document.querySelector('#name').value
+        let text = document.querySelector('#text').value
+        let email = document.querySelector('#email').value
+        fetch('https://hoseinwave.ir/api/contact.php', {
+            method: 'POST',
+            mode: 'cors',
+            body: JSON.stringify({
+                'name': name,
+                'mail': email,
+                'subject': 'New Message',
+                'message': text
+            })
+        })
     } else if (!validator.isEmail(document.querySelector('#email').value)) {
         document.querySelector('#email').classList.add('invalid-input')
         setTimeout(() => {

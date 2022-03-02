@@ -112,6 +112,19 @@ svg {
   text-transform: uppercase;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2692eb;
+  border-radius: 10px;
+}
+
 .profile-pic {
   max-width: 20rem;
   border-radius: 50%;
@@ -145,6 +158,13 @@ svg {
 }
 .social-media div {
   padding: 0.5rem 1.5rem;
+}
+.social-media div svg {
+  fill: #2692eb;
+  transition: fill 0.5s ease;
+}
+.social-media div svg:hover {
+  fill: #FFFFFF;
 }
 
 .call-to-action {
