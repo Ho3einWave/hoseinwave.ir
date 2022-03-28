@@ -12,6 +12,7 @@
 }
 
 .profile-pic {
+    max-height: 20rem;
     max-width: 20rem;
     border-radius: 50%;
 }
@@ -120,7 +121,7 @@
 }
 
 .project {
-    padding: 5rem;
+    padding: 5rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,30 @@
+@media screen and (max-width: 79em) {
+    .container {
+        max-width: 65rem;
+    }
+    .tech {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        place-items: center;
+    }
+}
+
+@media screen and (max-width: 65em) {
+    .container {
+        max-width: 55rem;
+    }
+    .skill p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .container {
+        max-width: 40rem;
+    }
+    .tech {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        place-items: center;
+    }
+}
