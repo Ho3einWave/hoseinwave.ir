@@ -1,4 +1,4 @@
-@media screen and (max-width: 79em) {
+@media (max-width: 79em) {
     .container {
         max-width: 65rem;
     }
@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (max-width: 65em) {
+@media (max-width: 65em) {
     .container {
         max-width: 55rem;
     }
@@ -18,13 +18,87 @@
     }
 }
 
-@media screen and (max-width: 48em) {
+@media (max-width: 59em) {
+    .container {
+        max-width: 45rem;
+    }
+    .skill p {
+        text-align: center;
+    }
+    .aboutme__grid {
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+    }
+    .image {
+        grid-row: 1;
+    }
+}
+
+@media (max-width: 48em) {
     .container {
         max-width: 40rem;
     }
     .tech {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 5rem;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 0 5rem;
+        .project {
+            padding: 2rem 0;
+        }
+        .project-image {
+            height: 15rem;
+        }
+    }
+    .contact-component {
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+        max-height: fit-content;
         place-items: center;
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+        }
+        .illu {
+            grid-row: 1;
+            width: fit-content;
+            position: static;
+            img {
+                position: static;
+                left: 0;
+                top: 0;
+                transform: none;
+            }
+        }
+    }
+    .skills {
+        grid-template-columns: 1fr;
+        padding: 0 5rem;
+        .skill {
+            padding: 1.5rem 0;
+        }
+    }
+    .intro-heading {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .text h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 32em) {
+    .container {
+        max-width: 25rem;
+    }
+    .project .project-image {
+        height: 9rem;
     }
 }
