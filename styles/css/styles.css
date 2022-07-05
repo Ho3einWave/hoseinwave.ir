@@ -435,6 +435,18 @@ svg {
     max-width: 25rem;
   }
 
+  .whoami img {
+    max-width: 15rem;
+  }
+
+  .image img {
+    max-width: 20rem;
+  }
+
+  .aboutme__grid .text {
+    margin: 0rem 2rem;
+  }
+
   .project .project-image {
     height: 9rem;
   }
