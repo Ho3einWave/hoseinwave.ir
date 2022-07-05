@@ -1,121 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Get all info about FivemServer/FxServer in one touch Developed by @Ho3einWave" />
-	<meta name="keywords" content="fivem, fivem info, fivem ip, fivem server, fxserver info" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2326214d5f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Get all info about FivemServer/FxServer in one touch Developed by @Ho3einWave"
+    />
+    <meta
+      name="keywords"
+      content="fivem, fivem info, fivem ip, fivem server, fxserver info"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2326214d5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>Fivem Info Gather</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- The Base Container 'Content will be align in this container' -->
     <div class="container">
-        <div class="blacksolid">
-            <!-- The View Box Div -->
-            <div class="thebox">
-                <!-- the form will get link or ip:port -->
-                <div class="initloadout">
-                    <div class="info-form">
-                        <label for="link">SERVER LINK</label>
-                        <input type="text" required name="link">
-                        <br>
-                        <button class="submit-button">GET INFO</button>
-
-
-                    </div>
-                    <div class="fivem-snail">
-                        <img src="imgs/snail.png" alt="Fivem Snail">
-                    </div>
-                </div>
-
-                <div class="loading hide">
-                    <div class="circle"></div>
-                    <div class="circle2"></div>
-
-                </div>
-                <!-- Information div aftef user submit the form will appare -->
-                <div class="infoloadout hide">
-                    <div class="navbutt">
-                        <div class="go-back"><i class="fas fa-arrow-left"></i></div>
-                        <div class="refresh"><i class="fas fa-redo"></i></div>
-                        <div class="discord-sup"><i class="fab fa-discord"></i></div>
-                    </div>
-                    <div class="server-banner">
-                        <img src="imgs/defbanner.png" alt="Fivem Banner">
-                    </div>
-                    <div class="info-section">
-
-                        <div class="server-avatar">
-                            <img src="imgs/deficon.png" alt="">
-                        </div>
-                        <div class="project-info">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Project Description</span>
-                            <br>
-                            <div class="ezflex">
-                                <button>CONNECT</button>
-                                <div class="infobox" id="serverlink"><i class="fas fa-link"></i>
-                                    <div>cfx.re/join/null</div>
-                                </div>
-                                <div class="infobox" id="serverip"><i class="fas fa-server"></i>
-                                    <div>127.0.0.1:30120</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vars">
-                        <div class="var-scripthook">
-                            <div class="var-title">Script Hook Allowed</div>
-                            <div class="var-value">Null</div>
-                        </div>
-                        <div class="var-server">
-                            <div class="var-title">Server</div>
-                            <div class="var-value">Null</div>
-                        </div>
-                        <div class="var-enforcegamebuild">
-                            <div class="var-title">Enforce Game Build</div>
-                            <div class="var-value">Null</div>
-                        </div>
-                        <div class="var-maxclient">
-                            <div class="var-title">Max Client</div>
-                            <div class="var-value">Null</div>
-                        </div>
-                        <div class="var-licensekey">
-                            <div class="var-title">License Key Token</div>
-                            <div class="var-value">Null</div>
-                        </div>
-                    </div>
-                    <div class="res-nd-plyr">
-                        <div class="resources">
-                            <h1>RESOURCES (0)</h1>
-
-                        </div>
-                        <div class="players">
-                            <h1>PLAYERS (0)</h1>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
+      <div class="blacksolid">
+        <!-- The View Box Div -->
+        <div class="thebox">
+          <!-- the form will get link or ip:port -->
+          <div class="initloadout">
+            <div class="info-form">
+              <label for="link">SERVER LINK</label>
+              <input type="text" required name="link" />
+              <br />
+              <button class="submit-button">GET INFO</button>
             </div>
-        </div>
-        <div class="dev">
-            <h1>Made With 💙 By HO3EiNWAVE</h1>
-        </div>
-    </div>
-    <script src="js/app.js"></script>
-</body>
+            <div class="fivem-snail">
+              <img src="./imgs/snail.png" alt="Fivem Snail" />
+            </div>
+          </div>
 
+          <div class="loading hide">
+            <div class="circle"></div>
+            <div class="circle2"></div>
+          </div>
+          <!-- Information div aftef user submit the form will appare -->
+          <div class="infoloadout hide">
+            <div class="navbutt">
+              <div class="go-back"><i class="fas fa-arrow-left"></i></div>
+              <div class="refresh"><i class="fas fa-redo"></i></div>
+              <div class="discord-sup"><i class="fab fa-discord"></i></div>
+            </div>
+            <div class="server-banner">
+              <img src="./imgs/defbanner.png" alt="Fivem Banner" />
+            </div>
+            <div class="info-section">
+              <div class="server-avatar">
+                <img src="./imgs/deficon.png" alt="" />
+              </div>
+              <div class="project-info">
+                <span class="project-name">Project Name</span>
+                <span class="project-description">Project Description</span>
+                <br />
+                <div class="ezflex">
+                  <button>CONNECT</button>
+                  <div class="infobox" id="serverlink">
+                    <i class="fas fa-link"></i>
+                    <div>cfx.re/join/null</div>
+                  </div>
+                  <div class="infobox" id="serverip">
+                    <i class="fas fa-server"></i>
+                    <div>127.0.0.1:30120</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vars">
+              <div class="var-scripthook">
+                <div class="var-title">Script Hook Allowed</div>
+                <div class="var-value">Null</div>
+              </div>
+              <div class="var-server">
+                <div class="var-title">Server</div>
+                <div class="var-value">Null</div>
+              </div>
+              <div class="var-enforcegamebuild">
+                <div class="var-title">Enforce Game Build</div>
+                <div class="var-value">Null</div>
+              </div>
+              <div class="var-maxclient">
+                <div class="var-title">Max Client</div>
+                <div class="var-value">Null</div>
+              </div>
+              <div class="var-licensekey">
+                <div class="var-title">License Key Token</div>
+                <div class="var-value">Null</div>
+              </div>
+            </div>
+            <div class="res-nd-plyr">
+              <div class="resources">
+                <h1>RESOURCES (0)</h1>
+              </div>
+              <div class="players">
+                <h1>PLAYERS (0)</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev">
+        <h1>Made With 💙 By HO3EiNWAVE</h1>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
