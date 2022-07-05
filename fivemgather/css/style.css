@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --base: rgba(39, 46, 57, 0.788);
+    --inputborder: #5D6062;
+    --buttonBg: #20242D;
+    --buttonBorder: #F30551;
+}
+
+
+/* Global Styles */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+input {
+    background: var(--base);
+    border-style: solid;
+    border-color: var(--inputborder);
+    width: 30rem;
+    height: 5rem;
+    color: white;
+    padding: 1rem;
+}
+
+button {
+    background-color: var(--buttonBg);
+    color: white;
+    padding: 1rem 4rem;
+    border-style: solid;
+    border-color: var(--buttonBorder);
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--buttonBorder);
+}
+
+.hide {
+    animation: fadeOut ease 8s;
+}
+
+.container {
+    height: 100vh;
+    background: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blacksolid {
+    backdrop-filter: blur(1rem);
+    background-color: rgba(39, 46, 57, 0.856);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thebox {
+    background-color: var(--base);
+    min-width: 70rem;
+    min-height: 40rem;
+    width: 70rem;
+    height: 40rem;
+    margin: 8rem;
+}
+
+.fivem-snail img {
+    pointer-events: none;
+    width: 20em;
+    height: 20em;
+}
+
+.initloadout {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: visibility 0.5s ease-in-out;
+}
+
+.fivem-snail {
+    justify-self: center;
+    align-self: center;
+}
+
+.info-form {
+    align-self: center;
+    padding: 4rem;
+}
+
+.info-form h3 {
+    color: var(--buttonBorder);
+}
+
+.info-form label {
+    color: white;
+}
+
+.info-form input {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.submit-button {
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+
+/* info div */
+
+
+/* .infoloadout {
+    display: none;
+} */
+
+.infoloadout {
+    position: relative;
+}
+
+.navbutt div {
+    position: absolute;
+    top: -8%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbutt div:hover {
+    background-color: #F30551;
+}
+
+.navbutt div i {
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.go-back {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--base);
+}
+
+.refresh {
+    margin-left: 5rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--base);
+}
+
+.discord-sup {
+    right: 0%;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: var(--base);
+}
+
+.server-banner img {
+    width: 100%;
+}
+
+.server-banner {
+    width: 100%;
+}
+
+.server-avatar {
+    margin: 2rem;
+}
+
+.info-section {
+    display: flex;
+}
+
+.project-info {
+    color: white;
+    margin: 2rem;
+}
+
+.project-name {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.project-description {
+    font-size: 2rem;
+}
+
+.infobox {
+    background-color: #3E4146;
+    width: auto;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+.infobox div {
+    display: inline;
+}
+
+.infobox i {
+    margin: 0rem 0.5rem;
+}
+
+.ezflex {
+    margin: 3.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.vars {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.vars div {
+    display: flex;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+
+.vars div .var-title {
+    background-color: #145163;
+    padding: 0.5rem;
+    margin-left: 0;
+    white-space: nowrap;
+}
+
+.vars div .var-value {
+    background-color: #1F3F4C;
+    padding: 0.5rem;
+    margin-left: 0;
+    white-space: nowrap;
+}
+
+.res-nd-plyr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.resources {
+    width: 100%;
+    background-color: var(--base);
+    height: 40rem;
+    width: auto;
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.resource {
+    background-color: #3B4044;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: max-content;
+    white-space: nowrap;
+    color: white;
+    font-size: small;
+    width: min-content;
+    display: inline-block;
+}
+
+.players {
+    width: auto;
+    background-color: var(--base);
+    height: 40rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.res-nd-plyr h1 {
+    font-weight: normal;
+    margin: 1rem;
+    color: #5C605F;
+}
+
+.player {
+    background-color: #3F4042;
+    display: flex;
+    margin: 1rem 2rem;
+}
+
+.player h2 {
+    padding: 0.8rem;
+    color: white;
+}
+
+.player-color {
+    background-color: #ebc82b;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    position: absolute;
+    border-color: var(--buttonBorder);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+    animation: loading 1s infinite;
+}
+
+.circle2 {
+    position: absolute;
+    border-color: var(--buttonBorder);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+    animation: loading 1s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes loading {
+    0% {
+        width: 2rem;
+        height: 2rem;
+        opacity: 1;
+    }
+    100% {
+        width: 10rem;
+        height: 10rem;
+        opacity: 0;
+    }
+}
+
+.dev {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    color: rgb(163, 163, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev h1 {
+    font-weight: normal;
+    letter-spacing: 0.3rem;
+}
+
+.hide {
+    display: none;
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+    input {
+        width: 25rem;
+        height: 4rem;
+    }
+    button {
+        padding: 0.7rem 3rem;
+    }
+    .thebox {
+        background-color: var(--base);
+        min-width: 60rem;
+        min-height: 35rem;
+        width: 60rem;
+        height: 35rem;
+        margin: 8rem;
+    }
+    .server-banner img {
+        width: 100%;
+    }
+    .server-banner {
+        width: 100%;
+    }
+    .resources {
+        height: 40rem;
+        width: auto;
+        padding: 1rem;
+    }
+    .players {
+        width: auto;
+        height: 40rem;
+    }
+    .server-avatar img {
+        width: 10rem;
+    }
+    .server-avatar {
+        margin: auto 1rem;
+    }
+    .project-info {
+        margin: 1rem;
+    }
+    .vars {
+        flex-wrap: wrap;
+    }
+    .infobox {
+        background-color: #3E4146;
+        width: auto;
+        height: 3rem;
+        font-size: 1.3rem;
+        margin-left: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-height:800px) {
+    .resources {
+        height: 25rem;
+    }
+    .players {
+        height: 25rem;
+    }
+    .player-color {
+        background-color: #ebc82b;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .player h2 {
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+        font-weight: normal;
+    }
+    .res-nd-plyr h1 {
+        font-size: 1.8rem;
+    }
+    .resource {
+        font-size: 1rem;
+    }
+    .navbutt div {
+        width: 4rem;
+        height: 4rem;
+    }
+    .navbutt div i {
+        font-size: 2rem;
+    }
+    .refresh {
+        margin-left: 4rem;
+    }
+    .vars {
+        flex-wrap: wrap;
+    }
+}
