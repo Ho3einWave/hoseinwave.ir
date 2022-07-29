@@ -1,132 +1,132 @@
 @font-face {
-    font-family: BRoya;
-    src: url(IRANSans_Light.ttf);
+  font-family: BRoya;
+  src: url(IRANSans_Light.ttf);
 }
 html {
-    cursor: url("../images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 
 body {
-    background-color: #101a26;
-    color: white;
-    font-family: Inter, BRoya, sans-serif;
+  background: url("../assets/pattern_bg.png"), #101a26;
+  color: white;
+  font-family: Inter, BRoya, sans-serif;
+  background-size: contain;
 }
 
 .profile {
-    margin-top: 6vh;
-    margin-bottom: 1em;
+  margin-top: 6vh;
+  margin-bottom: 1em;
 }
 
 .profile-img {
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
-    border: solid 0.3em #226fc7;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: solid 0.2em #226fc7;
 }
 
 .title {
-    color: #969696;
+  color: #969696;
 }
 
 .contact-fast {
-    margin: 0.4em 0;
+  margin: 0.4em 0;
 }
 
 .contact-fast h4 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .btn {
-    margin: 0 0.5em;
-    font-size: 1em;
-    background-color: #0a213c;
-    border: none;
+  margin: 0 0.5em;
+  font-size: 1em;
+  background-color: #0d2c50;
+  border: none;
 }
 
 .btn:hover {
-    background-color: #071628;
+  background-color: #0a223f;
 }
 
 .btn-whatsapp {
-    padding: 0.5em 1em;
-    background-color: #26ca65;
-    border-radius: 2em;
-    color: aliceblue;
+  padding: 0.5em 1em;
+  background-color: #26ca65;
+  border-radius: 2em;
+  color: aliceblue;
 }
 
 .btn-whatsapp:hover {
-    background-color: #20aa55;
-    color: aliceblue;
+  background-color: #20aa55;
+  color: aliceblue;
 }
 
 .btn-telegram {
-    padding: 0.5em 1em;
-    background-color: #229ED9;
-    border-radius: 2em;
-    color: aliceblue;
+  padding: 0.5em 1em;
+  background-color: #229ed9;
+  border-radius: 2em;
+  color: aliceblue;
 }
 
 .btn-telegram:hover {
-    background-color: #1c8abc;
-    color: aliceblue;
+  background-color: #1c8abc;
+  color: aliceblue;
 }
 
-.btn:focus , .btn:focus-visible {
-    outline: none !important;
-    border: none;
+.btn:focus,
+.btn:focus-visible {
+  outline: none !important;
+  border: none;
 }
 
 .btn-primary {
-    padding: 0.5em 1em;
-    border-radius: 2em;
+  padding: 0.5em 1em;
+  border-radius: 2em;
 }
 
-
-
 h4 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .usfull-links {
-    margin: 0.5em auto;
-    width: 18em;
-    border-radius: 2em;
+  margin: 0.5em auto;
+  width: 18em;
+  border-radius: 2em;
 }
 
 .contact-link i {
-    margin: 0 0.5em;
+  margin: 0 0.5em;
 }
 
 .usfull-links i {
-    margin: 0 0.5em;
+  margin: 0 0.5em;
 }
 
 .soundcloud:hover {
-    color: #e4783e;
+  color: #e4783e;
 }
 
 .twitter:hover {
-    color: #5AA4D6;
+  color: #5aa4d6;
 }
 
 .website:hover {
-    color: #00acee;
+  color: #00acee;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .main-buttons .btn {
-    margin-top: 1rem ;
-    transition: all 0.3s;
+  margin-top: 1rem;
+  transition: all 0.3s;
 }
 
-.main-buttons .btn:hover{
-    transform: translateY(-5px);
-    
+.main-buttons .btn:hover {
+  transform: translateY(-5px);
 }
 
 .music {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
